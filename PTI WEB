@@ -1,0 +1,96 @@
+<!DOCTYPEhtml>
+<html lang="pt-BR">
+<cabeça>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="largura=largura do dispositivo, escala inicial=1,0">
+    <title>Landing Page da Empresa XYZ</title>
+    <estilo>
+        /* Estilos gerais */
+        corpo {
+            família de fontes: Arial, sem serifa;
+            margem: 0;
+            preenchimento: 0;
+        }
+        .contêiner {
+            largura máxima: 1200px;
+            margem: 0 automático;
+            preenchimento: 20px;
+        }
+        /* Estilos para dispositivos móveis */
+        @media (largura máxima: 768px) {
+            .contêiner {
+                preenchimento: 10px;
+            }
+        }
+        /* Estilos para a seção de título */
+        cabeçalho {
+            cor de fundo: #f9f9f9;
+            preenchimento: 20px;
+            alinhamento de texto: centro;
+        }
+        h1 {
+            tamanho da fonte: 2rem;
+            margem inferior: 10px;
+        }
+        /* Estilos para a seção de serviços */
+        .Serviços {
+            exibição: flexível;
+            justificar-conteúdo: espaço entre;
+            margem superior: 30px;
+        }
+        .serviço {
+            flexível: 1;
+            preenchimento: 20px;
+            borda: 1px sólido #ddd;
+            alinhamento de texto: centro;
+        }
+        /* Estilos para o formulário de contato */
+        forma {
+            margem superior: 30px;
+        }
+        entrada[tipo="texto"],
+        entrada[tipo="e-mail"],
+        área de texto {
+            largura: 100%;
+            preenchimento: 10px;
+            margem inferior: 10px;
+            borda: 1px sólido #ddd;
+        }
+        botão {
+            cor de fundo: #007bff;
+            cor: #fff;
+            fronteira: nenhuma;
+            preenchimento: 10px 20px;
+            cursor: ponteiro;
+        }
+    </estilo>
+</head>
+<corpo>
+    <div class="contêiner">
+        <cabeçalho>
+            <h1>Empresa XYZ</h1>
+            <p>Sua saúde em primeiro lugar!</p>
+        </header>
+        <seção class="serviços">
+            <div class="serviço">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos consultas individuais, planos alimentares personalizados e muito mais.</p>
+            </div>
+            <div class="serviço">
+                <h2>Vantagens</h2>
+                <p>Profissionais específicos, atendimento personalizado e resultados comprovados.</p>
+            </div>
+            <div class="serviço">
+                <h2>Contato</h2>
+                <p>Preencha o formulário abaixo e entraremos em contato em breve:</p>
+                <form action="/enviar-contato" method="post">
+                    <input type="text" name="nome" placeholder="Seu nome" obrigatório>
+                    <input type="email" name="email" placeholder="Seu e-mail" obrigatório>
+                    <textarea name="mensagem" placeholder="Sua mensagem" rows="4" obrigatório></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </seção>
+    </div>
+</body>
+</html>
